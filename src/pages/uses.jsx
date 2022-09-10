@@ -41,75 +41,107 @@ export default function Uses() {
       >
         <div className="space-y-20">
           <ToolsSection title="Workstation">
-            <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-              I was using an Intel-based 16” MacBook Pro prior to this and the
-              difference is night and day. I’ve never heard the fans turn on a
-              single time, even under the incredibly heavy loads I put it
-              through with our various launch simulations.
+            <Tool title="Custom PC AMD Ryzen 5 5600X, 32GB RAM, 2TB M.2 Storage (2022)">
+              I refreshed my PC build this year, save for the GPU which was
+              unobtainable until recently. I use Windows for gaming but I love
+              the Linux dev experience so I use Windows Subsystem for Linux
+              (WSL2.0) to run Linux in tandem with Windows. <br />
+              It's awesome, try it.
             </Tool>
-            <Tool title="Apple Pro Display XDR (Standard Glass)">
-              The only display on the market if you want something HiDPI and
-              bigger than 27”. When you’re working at planetary scale, every
-              pixel you can get counts.
+            <Tool title="13” MacBook Air, M1, 8GB RAM (2021)">
+              When I'm on the go, I use my MacBook Air. The M1 chip is a beast,
+              the rumors are true. Paired with airpods, it's an unmatched mobile
+              experience.
             </Tool>
-            <Tool title="IBM Model M SSK Industrial Keyboard">
-              They don’t make keyboards the way they used to. I buy these any
-              time I see them go up for sale and keep them in storage in case I
-              need parts or need to retire my main.
+            <Tool title="GMMK Pro Keyboard | Boba U4T Switches">
+              My first dive into hobbyist mechanical keyboards. I spent many
+              hours modifying the internals to reach the perfect feel and sound.
+              It's like marbles in a bag. I also added a custom git keycaps to
+              complete the look.
             </Tool>
-            <Tool title="Apple Magic Trackpad">
-              Something about all the gestures makes me feel like a wizard with
-              special powers. I really like feeling like a wizard with special
-              powers.
-            </Tool>
-            <Tool title="Herman Miller Aeron Chair">
+            <Tool title="Steelcase Leap Desk Chair">
               If I’m going to slouch in the worst ergonomic position imaginable
               all day, I might as well do it in an expensive chair.
             </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
-            <Tool title="Sublime Text 4">
-              I don’t care if it’s missing all of the fancy IDE features
-              everyone else relies on, Sublime Text is still the best text
-              editor ever made.
+            <Tool title="VSCode">
+              You know it, you love it. Unless you vim.
             </Tool>
-            <Tool title="iTerm2">
+            <Tool title="Windows Terminal/iTerm2 + powerlevel10k">
               I’m honestly not even sure what features I get with this that
-              aren’t just part of the macOS Terminal but it’s what I use.
+              aren’t just part of the bash terminal but it’s what I use and it
+              looks pretty.
+              <br />
+              <a
+                className="text-blue-500 hover:underline hover:underline-offset-2"
+                href="https://github.com/romkatv/powerlevel10k"
+              >
+                powerlevel10k
+              </a>
             </Tool>
-            <Tool title="TablePlus">
-              Great software for working with databases. Has saved me from
-              building about a thousand admin interfaces for my various projects
-              over the years.
+            <Tool title="WSL 2.0">
+              Seamless Linux integration with Windows. Accessed via Windows
+              Terminal with an easy hookup to your Windows VScode
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Design">
-            <Tool title="Figma">
-              We started using Figma as just a design tool but now it’s become
-              our virtual whiteboard for the entire company. Never would have
-              expected the collaboration features to be the real hook.
+          <ToolsSection title="Knives">
+            <Tool title="Watanabe Pro 180mm Nakiri">
+              A legendary maker's signature knife. The Watanabe Pro is well
+              known in the Japanese knife world for its incredible
+              heat-treatment, geometry and history. The Nakiri is a Japanese
+              vegetable knife that is perfect for chopping, dicing, and slicing
+              vegetables.
+            </Tool>
+            <Tool title="Takeda NAS 180mm Bunka">
+              An equally legendary Japanese bladesmith, Takeda is known for his
+              distinct style and incredible heat-treatment of Aogami-Super
+              steel. The Bunka is a Japanese all-purpose knife that is perfect
+              for slicing, dicing, and chopping.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Productivity">
-            <Tool title="Alfred">
-              It’s not the newest kid on the block but it’s still the fastest.
-              The Sublime Text of the application launcher world.
+          <ToolsSection title="Coffee">
+            <Tool title="IZpresso JX-Pro Manual Coffee Grinder">
+              I love the ritual of grinding my own beans in the morning. The
+              IZpresso JX-Pro strikes a good balance between price and
+              capability. It grinds med-fine to course with ease and can go
+              espresso-fine. I haven't made my way to espresso yet but at least
+              I'm prepared.
             </Tool>
-            <Tool title="Reflect">
-              Using a daily notes system instead of trying to keep things
-              organized by topics has been super powerful for me. And with
-              Reflect, it’s still easy for me to keep all of that stuff
-              discoverable by topic even though all of my writing happens in the
-              daily note.
+            <Tool title="Kalita Wave">
+              I use a ceramic Kalita Wave. It's a pour-over dripper that has
+              reliably made my pourover coffee since January '22. I'd like to
+              say I experiment with different brewing ratios and times but I'm a
+              creature of habit and I just use the same iced recipe every time.
+              25g beans, 100g ice, 250g water, 3:30 brew time. Adjust grind to
+              roast.
             </Tool>
-            <Tool title="SavvyCal">
-              Great tool for scheduling meetings while protecting my calendar
-              and making sure I still have lots of time for deep work during the
-              week.
+            <Tool title="Third Wave Water">
+              I never thought I'd go this far in search of perfection. I buy
+              plain distilled water and add a small package of Third Wave
+              Water's "Classic" blend to it. It's a blend of minerals that
+              creates "soft" water, ideal for brewing and coffee makers
+              (protects coffee makers from Limescale). Much of the water we
+              consume is "hard" or just harder than this. "Soft" water lends
+              itself to a clear and balanced cup of coffee. It has ruined my
+              life. It's wonderful.
+              <br />
+              <a
+                className="text-blue-500 hover:underline hover:underline-offset-2"
+                href="https://www.usgs.gov/special-topics/water-science-school/science/hardness-water"
+              >
+                Read more about hard water.
+              </a>
             </Tool>
-            <Tool title="Focus">
-              Simple tool for blocking distracting websites when I need to just
-              do the work and get some momentum going.
+            <Tool title="Acaia Pearl S">
+              Professional-grade scale for monitoring weight, time, and flow
+              rate during coffee brewing.
+              <br /> It's excessive, it's unnecessary, it's fine.
+            </Tool>
+            <Tool title="Fellow Stagg EKG">
+              Professional-grade gooseneck kettle with precise temperature
+              control.
+              <br /> It's excessive, it's unnecessary, it's fine.
             </Tool>
           </ToolsSection>
         </div>

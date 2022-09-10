@@ -11,38 +11,52 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Popup Club',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
-  },
-  {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      '[Under construction] Discover local food popups. A platform for popup organizers to share their events.',
+    link: {
+      href: 'https://github.com/OpoJack/popup-club',
+      label: 'github.com',
+    },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Squishiest mon',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      'Simple voting app. Vote for the squishiest mon. Built with Next.js, Tailwind and Planetscale.',
+    link: {
+      href: 'https://github.com/OpoJack/squishiest-mon',
+      label: 'github.com',
+    },
+    logo: logoOpenShuttle,
+  },
+  {
+    name: 'Warden Knives',
+    description: 'My first large e-commerce project. A Japanese knife shop.',
+    link: {
+      href: 'https://github.com/OpoJack/warden-knives',
+      label: 'github.com',
+    },
     logo: logoCosmos,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Spotify track tracker',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'Simple script to gather data about the top Spotify tracks and send them to a database.',
+    link: {
+      href: 'https://github.com/OpoJack/Spotify-track-tracker',
+      label: 'github.com',
+    },
+    logo: logoAnimaginary,
+  },
+  {
+    name: 'Deli Desires',
+    description:
+      'A simple static website for a local restaurant. Built on CRA.',
+    link: {
+      href: 'https://github.com/OpoJack/deli-desires',
+      label: 'github.com',
+    },
     logo: logoOpenShuttle,
   },
 ]
