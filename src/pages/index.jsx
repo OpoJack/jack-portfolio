@@ -139,8 +139,8 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Domu Chibi',
+      title: 'Kitchen Prep/Management',
       logo: logoPlanetaria,
       start: '2019',
       end: {
@@ -149,25 +149,18 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Getaboard Foundation',
+      title: 'Software Engineer Intern',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2020',
+      end: '2020',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Tori Tori',
+      title: 'Prep Cook',
       logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: '2021',
+      end: '2021',
     },
   ]
 
@@ -175,7 +168,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Work History</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -211,7 +204,11 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="https://1drv.ms/b/s!At_QYY3_A8nDjt9NpIqNdVLI_Elrvg?e=BCh52y"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -250,24 +247,21 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
-        </title>
+        <title>Jack oporto - Software engineer, chef, coffee enthusiast.</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Jack Oporto, a software engineer based in Orlando, FL. I’m a recent grad, focused on learning and building new things. I’m always working on a few projects, and I’m always looking for new opportunities."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software engineer, amateur chef, coffee enthusiast.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Jack Oporto, a software engineer based in Orlando, FL. I’m a
+            recent grad, focused on learning and building new things. Big fan of
+            <b> Typescript</b>, <b>React</b> and <b>Tailwind.</b>
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -297,7 +291,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
