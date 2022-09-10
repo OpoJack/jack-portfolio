@@ -62,7 +62,7 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               I’m Jack Oporto, <br />{' '}
               <span className="text-4xl">
-                an Orlando-based software engineer.
+                a software engineer based in Orlando, FL.
               </span>
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">

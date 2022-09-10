@@ -259,9 +259,10 @@ export default function Home({ articles }) {
             Software engineer, amateur chef, coffee enthusiast.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Jack Oporto, a software engineer based in Orlando, FL. I’m a
-            recent grad, focused on learning and building new things. Big fan of
-            <b> Typescript</b>, <b>React</b> and <b>Tailwind.</b>
+            I’m <strong>Jack Oporto</strong>, a software engineer based in
+            Orlando, FL. I’m a recent grad, focused on learning and building new
+            things. Big fan of
+            <b> Typescript</b>, <b>React + Next.js</b> and <b>Tailwind.</b>
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
