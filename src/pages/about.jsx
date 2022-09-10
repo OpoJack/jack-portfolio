@@ -43,13 +43,13 @@ export default function About() {
         <title>About - Jack Oporto</title>
         <meta
           name="description"
-          content="I’m Jack Oporto. I live in Orlando FL, where I design the future."
+          content="I’m Jack Oporto, a software engineer living in Orlando FL. I’m passionate about building great software and helping others do the same."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
-            <div className="max-w-xs px-2.5 lg:max-w-none">
+            <div className="max-w-xs px-2.5 pl-10 lg:max-w-none">
               <Image
                 src={portraitImage}
                 alt=""
@@ -60,14 +60,17 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Jack Oporto. I live in Orlando, FL where I
+              I’m Jack Oporto, <br />{' '}
+              <span className="text-4xl">
+                an Orlando-based software engineer.
+              </span>
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                I've been I’ve loved making things for as long as I can
+                remember, and wrote my first program when I was 6 years old,
+                just two weeks after my mom brought home the brand new Macintosh
+                LC 550 that I taught myself to type on.
               </p>
               <p>
                 The only thing I loved more than computers as a kid was space.
