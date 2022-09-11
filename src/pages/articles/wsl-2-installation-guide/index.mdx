@@ -1,4 +1,22 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/future/image'
+import welcome from './welcome.jpg'
+import terminal1 from './terminal1.jpg'
+import terminal2 from './terminal2.png'
+import configureTerminal from './configure-terminal.jpg'
+import configureTerminal2 from './configure-terminal2.jpg'
+import customFont from './customfont.jpg'
+import configureTerminal3 from './configure-terminal3.jpg'
+import configureTerminal4 from './configure-terminal4.jpg'
+import installZsh from './install-zsh.gif'
+import installZsh2 from './install-zsh2.gif'
+import powerlevel10k from './powerlevel10k.jpg'
+import linuxFilesystem from './linux-filesystem.jpg'
+import linuxFilesystem2 from './linux-filesystem2.jpg'
+import wslVscode from './wsl-vscode.jpg'
+import wslVscode2 from './wsl-vscode2.jpg'
+import wslVscode3 from './wsl-vscode3.jpg'
+import wslVscode4 from './wsl-vscode4.jpg'
 
 export const meta = {
   author: 'Jack Oporto',
@@ -10,23 +28,38 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
+<Image
+  src={welcome}
+  className="shadow-md"
+  width="892"
+  height="406"
+  alt="Guide to install WSL 2.0"
+/>
+
 **Windows Subsystem for Linux** is a tool developed by Microsoft that lets developers run a true GNU/Linux environment directly on Windows, without a virtual machine or dual-boot setup. This is the environment largely preferred by developers today because of the abundance of **tools** and **productivity** options only available on a UNIX-based OS.
 
 [Read more about WSL here](https://docs.microsoft.com/en-us/windows/wsl/about)
 
 This guide will help you get your environment set up, then make it pretty.
 
-## Pre-reqs
+## ⚠️Pre-reqs⚠️
 
 1. You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11, my experience is with Windows 11.
 2. A computer with Hyper-V Virtualization support ([Guide here](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v))
 3. Use **vscode**
 
-## Get Started
+---
 
-### 1. Install Windows Terminal via Microsoft Store
+## ✅ Get Started ✅
+
+## 1. Install Windows Terminal via Microsoft Store
 
 This is a powerful terminal that will accommodate our environment with many options.
+
+<Image src={terminal2} className="shadow-md" width="500 " height="212" />
+<Image src={terminal1} className="shadow-md" width="1178 " height="520" />
+
+## 2. Install WSL
 
 Open Windows Powershell in **admin mode** then run:
 
@@ -36,71 +69,210 @@ wsl --install
 
 **\*Reboot** after installation\*
 
-I derive a large amount of my self-worth from whether or not Hacker News is impressed with the work I'm doing, so when I realized this, I cancelled all of our existing projects and started migrating everything to Rust immediately.
+## 3. Install Linux/Ubuntu
 
-## Sermone fata
+Use the following commands to check which distros are available to download.
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
-
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
-
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
+```bash
+wsl --list --online
 ```
 
-Aere repetiti cognataque natus. Habebat vela solutis saepe munus nondum adhuc
-oscula nomina pignora corpus deserat.
+In my case, I installed **Ubuntu**.
 
-## Lethaei Pindumve me quae dinumerat Pavor
-
-Idem se saxa fata pollentibus geminos; quos pedibus. Est urnis Herses omnes nec
-divite: et ille illa furit sim verbis Cyllenius.
-
-1. Captus inpleverunt collo
-2. Nec nam placebant
-3. Siquos vulgus
-4. Dictis carissime fugae
-5. A tacitos nulla viginti
-
-Ungues fistula annoso, ille addit linoque motatque uberior verso
-[rubuerunt](#) confine desuetaque. _Sanguine_ anteit
-emerguntque expugnacior est pennas iniqui ecce **haeret** genus: peiora imagine
-fossas Cephisos formosa! Refugitque amata [refelli](#)
-supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum
-regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota
-ars talis.
-
-```c
-digital.webcam_dual_frequency = webmasterMms;
-if (5 + language_standalone_google) {
-    cc_inbox_layout *= file_character;
-    task += p;
-    lockUnicode += enterprise_monochrome(tokenFunctionPersonal, keyVirtual,
-            adf);
-}
-windows_binary_esports(87734, array(restoreRomTopology, adRaw(407314),
-        dongleBashThumbnail), interpreter);
+```bash
+wsl --install -d Ubuntu
 ```
 
-Sit volat naturam; motu Cancri. Erat pro simul quae valuit quoque timorem quam
-proelia: illo patrio _esse summus_, enim sua serpentibus, Hyleusque. Est coniuge
-recuso; refert Coroniden ignotos manat, adfectu.
+Once installed, you’ll be prompted to create a **username** and **password** for Linux. Lastly, run this command to receive some Linux updates. It will prompt you for your password, simply type it in and hit enter.
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+## 4. Configure Windows Terminal
+
+When you open the Terminal, it should default to Windows Powershell. Select the dropdown next to the new tab button and confirm your Linux OS is an option.
+
+<Image src={configureTerminal} className="shadow-md" width="220" height="210" />
+Open **Settings** -> **Startup** and change the **Default profile** to your Linux
+OS. Save changes then close/open the Terminal to confirm changes.
+<Image
+  src={configureTerminal2}
+  className="shadow-md"
+  width="1178"
+  height="607"
+/>
+### A. Custom font (Optional but recommended){' '}
+
+Next you’ll want to install and apply the font “**MesloLGS NF**” because this font can display certain icons and glyphs
+that will otherwise render an error box like \*\*[x]{' '}
+
+[Download them here](https://github.com/romkatv/powerlevel10k#fonts),
+you only need to follow steps 1 & 2.
+
+<Image src={customFont} className="shadow-md" width="494" height="189" />
+
+Once installed, apply it to your Terminal in the Settings -> Profiles -> Defaults
+
+<Image
+  src={configureTerminal3}
+  className="shadow-md"
+  width="1178"
+  height="607"
+/>
+
+Additionally, set your preferred Windows Terminal theme. There are only a couple included by default. To add more, consider [windowsterminalthemes.dev](https://windowsterminalthemes.dev/)
+
+Once you select a theme, clicking “Get theme” will copy the color information to your clipboard. Back in the Terminal, select **Open JSON file** in the settings, I recommend using vscode for this.
+
+Navigate to “schemes” and paste your color scheme into the array of other schemes.
+
+<Image
+  src={configureTerminal4}
+  className="shadow-md"
+  width="350"
+  height="616"
+/>
+
+## 5. Install ZSH & OhMyZsh
+
+This is my recommended preference, here you can read more about [zsh](https://zsh.sourceforge.io/) and [OhMyZsh](https://ohmyz.sh/)
+
+Using your Terminal in Linux, run this command:
+
+```bash
+sudo apt-get update && sudo apt-get install -y zsh
+```
+
+<Image src={installZsh} className="shadow-md" width="1259" height="719" />
+
+Once installed, you should see zsh in /etc/shells by running:
+
+```bash
+cat /etc/shells
+```
+
+### A. OhMyZsh
+
+OhMyZsh is a framework for managing zsh configs and plugins. Notably, it includes git as a default plugin. Run the entire following command:
+
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+```
+
+<Image src={installZsh2} className="shadow-md" width="1243" height="719" />
+When prompted, press y to set zsh as your default shell.
+
+## 6. Powerlevel10k - The eye candy
+
+[P10k](https://github.com/romkatv/powerlevel10k) is a theme for zsh that adds rich visual features to the terminal. Here’s an example of some styles you can choose:
+
+<Image src={powerlevel10k} className="shadow-md" width="582" height="387" />
+
+To get started, run this whole command:
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+Once complete, you must enable the theme in your **.zshrc** file. This file is located within your user folder in Linux. For example, in my Windows explorer it’s located here: **\\wsl.localhost\Ubuntu\home\jack**
+
+| <Image src={linuxFilesystem} className="shadow-md" width="175" height="238" /> | <Image src={linuxFilesystem2} className="shadow-md" width="585" height="120" /> |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+
+Open the file in a text editor and modify the line that says “ZSH_THEME=”robbyrussell” with:
+
+```bash
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+After saving the file, return to the terminal and run `zsh`
+This will refresh the terminal and begin the P10k setup. Simply select the options that you like the most
+
+**Congratulations, your terminal is in good shape. Now it just needs dev tools.
+This section will focus on web-dev related tools. If you already use node, you can stop here.**
+
+---
+
+## What are node_modules?
+
+Most web-projects these days have a list of **dependencies** they rely on- **packages** that they have imported to make the project work. You may be familiar with some popular packages such as react, express and jquery just to name a few.
+
+It’s important to understand that these packages are often comprised of thousands of files, some small and some large. node_modules is **not** meant to be included in your github commits, due to their size and complexity. Instead, you are meant to download the core project, then download/install the dependencies independently.
+
+The solution to this problem are **package managers**, of which I have included **npm** and **yarn**. Both fundamentally solve the same problem and the decision to use one or the other is up to you. See a deeper comparison between them [here](https://www.geeksforgeeks.org/difference-between-npm-and-yarn/).
+
+## 7. Node/npm/nvm
+
+Run the nvm(Node Version Manager) installer:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+```
+
+Then run:
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+
+Once complete, you should have access to the nvm command line tool, run this to check:
+
+```bash
+nvm -v
+```
+
+This should return the version of nvm you’re running.
+
+Next, install and use the LTS (Long Term Support) version of node by running these two commands:
+
+```bash
+nvm install --lts
+nvm use --lts
+```
+
+nvm also installs npm (Node Package Manager), confirm it’s working by running:
+
+```bash
+npm -v
+```
+
+**Congratulations, you have node/npm/nvm**
+[Learn more about npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
+
+## 8. Yarn
+
+Yarn is another package manager, very similar to npm. Use one **or** the other for any particular project, **do not** attempt to use both for a single project as this will likely cause issues. To get started, run:
+
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt update && sudo apt install yarn
+```
+
+**Congratulations, you have yarn**
+[Learn more about yarn](https://classic.yarnpkg.com/en/docs/cli/)
+
+## 9. Putting it all together
+
+Ultimately, setting all this up should provide a seamless development experience, so how does this all work in **practice**?
+Once Linux is set up and you open vscode in Windows, you’ll be prompted to install a **WSL extension**. Install it and you’ll notice a small blue box at the bottom left of the window. **You’re now ready to start/clone a project and get to work!**
+
+| <Image src={wslVscode} className="shadow-md" width="471" height="121" /> | <Image src={wslVscode2} className="shadow-md" width="256" height="106" /> |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+
+I recommend you create a folder for your projects within your user folder, for example:
+
+**/home/`<YourUser>`/Projects**
+
+When you open a project located inside Linux, your vscode will look like this:
+
+<Image src={wslVscode3} className="shadow-md" width="459" height="59" />
+
+Lastly, to easily open your project in vscode, simply navigate to the project folder in your Terminal and run:
+
+```bash
+code .
+```

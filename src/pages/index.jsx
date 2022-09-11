@@ -17,10 +17,9 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoGetaboard from '@/images/logos/getaboard.svg'
+import logoChibi from '@/images/logos/chibi.svg'
+import logoToriTori from '@/images/logos/toritori.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -141,7 +140,7 @@ function Resume() {
     {
       company: 'Domu Chibi',
       title: 'Kitchen Prep/Management',
-      logo: logoPlanetaria,
+      logo: logoChibi,
       start: '2019',
       end: {
         label: 'Present',
@@ -151,14 +150,14 @@ function Resume() {
     {
       company: 'Getaboard Foundation',
       title: 'Software Engineer Intern',
-      logo: logoAirbnb,
+      logo: logoGetaboard,
       start: '2020',
       end: '2020',
     },
     {
       company: 'Tori Tori',
       title: 'Prep Cook',
-      logo: logoFacebook,
+      logo: logoToriTori,
       start: '2021',
       end: '2021',
     },

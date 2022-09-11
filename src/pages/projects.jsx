@@ -3,11 +3,11 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
+import logoPython from '@/images/logos/python.svg'
+import logoWarden from '@/images/logos/warden.svg'
+import logoSquishy from '@/images/logos/squishy.svg'
+import logoDeli from '@/images/logos/deli.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
@@ -18,7 +18,7 @@ const projects = [
       href: 'https://github.com/OpoJack/popup-club',
       label: 'github.com',
     },
-    logo: logoHelioStream,
+    logo: logoOpenShuttle,
   },
   {
     name: 'Squishiest mon',
@@ -28,7 +28,7 @@ const projects = [
       href: 'https://github.com/OpoJack/squishiest-mon',
       label: 'github.com',
     },
-    logo: logoOpenShuttle,
+    logo: logoSquishy,
   },
   {
     name: 'Warden Knives',
@@ -37,27 +37,27 @@ const projects = [
       href: 'https://github.com/OpoJack/warden-knives',
       label: 'github.com',
     },
-    logo: logoCosmos,
+    logo: logoWarden,
   },
   {
     name: 'Spotify track tracker',
     description:
-      'Simple script to gather data about the top Spotify tracks and send them to a database.',
+      'Simple Python script to gather data about the top Spotify tracks and send them to a database.',
     link: {
       href: 'https://github.com/OpoJack/Spotify-track-tracker',
       label: 'github.com',
     },
-    logo: logoAnimaginary,
+    logo: logoPython,
   },
   {
     name: 'Deli Desires',
     description:
-      'A simple static website for a local restaurant. Built on CRA.',
+      'A simple static website for a local restaurant. Built with CRA.',
     link: {
       href: 'https://github.com/OpoJack/deli-desires',
       label: 'github.com',
     },
-    logo: logoOpenShuttle,
+    logo: logoDeli,
   },
 ]
 
