@@ -3,6 +3,19 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import Link from 'next/link'
+import {
+  JsIcon,
+  TsIcon,
+  ReactIcon,
+  TailwindIcon,
+  NodeIcon,
+  MongoIcon,
+  PostgresIcon,
+  MysqlIcon,
+  GitIcon,
+  GitHubIcon,
+} from '@/images/logos/techIcons'
 
 function ToolsSection({ children, ...props }) {
   return (
@@ -25,6 +38,23 @@ function Tool({ title, href, children }) {
   )
 }
 
+//This will output all the tech icons in a row
+function TechTools() {
+  return (
+    <div className="flex flex-row space-x-4 ">
+      <JsIcon />
+      <TsIcon />
+      <ReactIcon />
+      <TailwindIcon />
+      <NodeIcon />
+      <MongoIcon />
+      <PostgresIcon />
+      <MysqlIcon />
+      <GitIcon />
+    </div>
+  )
+}
+
 export default function Uses() {
   return (
     <>
@@ -37,21 +67,33 @@ export default function Uses() {
       </Head>
       <SimpleLayout
         title="Software I use, tools I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+        intro="These are some of my favorite tools to build software, prepare food and brew coffee."
       >
-        <div className="space-y-20">
+        <div className="space-y-14">
+          <ToolsSection title="Tech">
+            {/* 
+            Javascript, Typescript, React, Next.js, Tailwind CSS, tRPC, Node.js, MongoDB, PostgreSQL, MySQL, Git, SASS
+            */}
+            <TechTools />
+          </ToolsSection>
           <ToolsSection title="Workstation">
-            <Tool title="Custom PC AMD Ryzen 5 5600X, 32GB RAM, 2TB M.2 Storage (2022)">
-              I refreshed my PC build this year, save for the GPU which was
-              unobtainable until recently. I use Windows for gaming but I love
-              the Linux dev experience so I use Windows Subsystem for Linux
-              (WSL2.0) to run Linux in tandem with Windows. <br />
+            <Tool title="Windows PC, Linux environment (2022)">
+              I refreshed my PC build this year, save for the GPU. I stay with
+              Windows for gaming but I love the Linux dev experience so I use
+              Windows Subsystem for Linux (
+              <Link
+                href="/articles/wsl-2-installation-guide"
+                className="text-blue-500"
+              >
+                WSL 2.0
+              </Link>
+              ) to run Linux in tandem with Windows. <br />
               It's awesome, try it.
             </Tool>
-            <Tool title="13” MacBook Air, M1, 8GB RAM (2021)">
-              When I'm on the go, I use my MacBook Air. The M1 chip is a beast,
-              the rumors are true. Paired with airpods, it's an unmatched mobile
-              experience.
+            <Tool title="13” MacBook Air M1 (2021)">
+              When I'm on the go, I use my MacBook Air. The M1 chip is
+              incredible for development and the Air is convenient for travel.
+              Paired with airpods, it's an unmatched mobile experience.
             </Tool>
             <Tool title="GMMK Pro Keyboard | Boba U4T Switches">
               My first dive into hobbyist mechanical keyboards. I spent many
@@ -73,12 +115,12 @@ export default function Uses() {
               aren’t just part of the bash terminal but it’s what I use and it
               looks pretty.
               <br />
-              <a
+              <Link
                 className="text-blue-500 hover:underline hover:underline-offset-2"
                 href="https://github.com/romkatv/powerlevel10k"
               >
                 powerlevel10k
-              </a>
+              </Link>
             </Tool>
             <Tool title="WSL 2.0">
               Seamless Linux integration with Windows. Accessed via Windows
@@ -105,14 +147,15 @@ export default function Uses() {
               I love the ritual of grinding my own beans in the morning. The
               IZpresso JX-Pro strikes a good balance between price and
               capability. It grinds med-fine to course with ease and can go
-              espresso-fine. I haven't made my way to espresso yet but at least
-              I'm prepared.
+              espresso-fine. I haven't made my way to espresso yet but I'm
+              prepared.
             </Tool>
             <Tool title="Kalita Wave">
               I use a ceramic Kalita Wave. It's a pour-over dripper that has
               reliably made my pourover coffee since January '22. I'd like to
               say I experiment with different brewing ratios and times but I'm a
               creature of habit and I just use the same iced recipe every time.
+              <br />
               25g beans, 100g ice, 250g water, 3:30 brew time. Adjust grind to
               roast.
             </Tool>

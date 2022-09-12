@@ -15,8 +15,8 @@ const projects = [
     description:
       '[Under construction] Discover local food popups. A platform for popup organizers to share their events.',
     link: {
-      href: 'https://github.com/OpoJack/popup-club',
-      label: 'github.com',
+      href: 'https://github.com/OpoJack/',
+      label: 'Currently private',
     },
     logo: logoOpenShuttle,
   },
