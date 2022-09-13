@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'Popup Club',
     description:
-      '[Under construction] Discover local food popups. A platform for popup organizers to share their events.',
+      '[Under construction] Discover local food popups. A platform for popup organizers to share their events. Built with Next.js and Tailwind.',
     link: {
       href: 'https://github.com/OpoJack/',
       label: 'Currently private',
@@ -32,7 +32,8 @@ const projects = [
   },
   {
     name: 'Warden Knives',
-    description: 'My first large e-commerce project. A Japanese knife shop.',
+    description:
+      'My first large e-commerce project. A Japanese knife shop. Built with Create-react-app, SASS and Redux',
     link: {
       href: 'https://github.com/OpoJack/warden-knives',
       label: 'github.com',
@@ -52,7 +53,7 @@ const projects = [
   {
     name: 'Deli Desires',
     description:
-      'A simple static website for a local restaurant. Built with CRA.',
+      'A simple static website for a local restaurant. Built with Create-react-app and Tailwind.',
     link: {
       href: 'https://github.com/OpoJack/deli-desires',
       label: 'github.com',

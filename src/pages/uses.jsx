@@ -50,6 +50,7 @@ function TechTools() {
       <MongoIcon />
       <PostgresIcon />
       <MysqlIcon />
+
       <GitIcon />
     </div>
   )
@@ -67,15 +68,13 @@ export default function Uses() {
       </Head>
       <SimpleLayout
         title="Software I use, tools I love, and other things I recommend."
-        intro="These are some of my favorite tools to build software, prepare food and brew coffee."
+        intro="Dev, knives, coffee."
       >
         <div className="space-y-14">
-          <ToolsSection title="Tech">
-            {/* 
+          {/* <ToolsSection title="Tech">
             Javascript, Typescript, React, Next.js, Tailwind CSS, tRPC, Node.js, MongoDB, PostgreSQL, MySQL, Git, SASS
-            */}
             <TechTools />
-          </ToolsSection>
+          </ToolsSection> */}
           <ToolsSection title="Workstation">
             <Tool title="Windows PC, Linux environment (2022)">
               I refreshed my PC build this year, save for the GPU. I stay with
