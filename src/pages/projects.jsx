@@ -15,8 +15,8 @@ const projects = [
     description:
       '[Under construction] Discover local food popups. A platform for popup organizers to share their events. Built with Next.js and Tailwind.',
     link: {
-      href: 'https://github.com/OpoJack/',
-      label: 'Currently private',
+      href: 'https://github.com/OpoJack/popup-club',
+      label: 'github.com',
     },
     logo: logoOpenShuttle,
   },
