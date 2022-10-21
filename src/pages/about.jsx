@@ -75,13 +75,13 @@ export default function About() {
                 great to start, but you have to start to be great."
               </p>
               <p>
-                Working for a Michelin-recommended restaurant group instills a
-                sense of responsibility, to yourself and your guests. You must
-                hold yourself to a higher standard and never get too
-                comfortable. No matter the craft, there's something alluring
-                about the push to get better and better. Always be better than
-                you were. In 2020, I resolved to pursue a Bachelor's degree in
-                software engineering, which I completed in 2022.
+                Working for a highly regarded restaurant group instills a sense
+                of responsibility, to yourself and your guests. You hold
+                yourself to a higher standard and can't get too comfortable. No
+                matter the craft, there's something alluring about the push to
+                get better and better. Always be better than you were. In 2020,
+                I resolved to pursue a Bachelor's degree in software
+                engineering, which I completed in 2022.
               </p>
               <p>
                 Since then, I've spent most of my time creating new projects,
