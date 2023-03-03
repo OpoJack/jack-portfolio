@@ -18,7 +18,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import image6 from '@/images/photos/image-6.jpg'
 import logoGetaboard from '@/images/logos/getaboard.svg'
-import logoChibi from '@/images/logos/chibi.svg'
+import logoARA from '@/images/logos/ara.svg'
 import logoToriTori from '@/images/logos/toritori.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -138,10 +138,10 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Domu Chibi',
-      title: 'Kitchen Prep/Management',
-      logo: logoChibi,
-      start: '2019',
+      company: 'Applied Research Associates',
+      title: 'Junior Software Engineer',
+      logo: logoARA,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
@@ -155,11 +155,11 @@ function Resume() {
       end: '2020',
     },
     {
-      company: 'Tori Tori',
-      title: 'Prep Cook',
+      company: 'Domu Dynasty',
+      title: 'Prep/Line Cook/Kitchen Management',
       logo: logoToriTori,
-      start: '2021',
-      end: '2021',
+      start: '2019',
+      end: '2022',
     },
   ]
 
@@ -221,24 +221,22 @@ function Photos() {
   return (
     <div className="sm-ml-2 mt-16">
       <div className="m-auto -my-4 flex justify-start gap-5 overflow-auto py-4 sm:gap-8 xl:justify-center">
-        {[image1, image2, image3, image4, image5, image6].map(
-          (image, imageIndex) => (
-            <div
-              key={image.src}
-              className={clsx(
-                'relative aspect-[8/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-                rotations[imageIndex % rotations.length]
-              )}
-            >
-              <Image
-                src={image}
-                alt=""
-                sizes="(min-width: 640px) 18rem, 11rem"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
-          )
-        )}
+        {[image1, image2, image3, image4, image6].map((image, imageIndex) => (
+          <div
+            key={image.src}
+            className={clsx(
+              'relative aspect-[8/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 shadow-sm dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              rotations[imageIndex % rotations.length]
+            )}
+          >
+            <Image
+              src={image}
+              alt=""
+              sizes="(min-width: 640px) 18rem, 11rem"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+        ))}
       </div>
     </div>
   )
@@ -251,7 +249,7 @@ export default function Home({ articles }) {
         <title>Jack oporto - Software engineer, chef, coffee enthusiast.</title>
         <meta
           name="description"
-          content="I’m Jack Oporto, a software engineer based in Orlando, FL. I’m a recent grad, focused on learning and building new things. It's nice to meet you."
+          content="I’m Jack Oporto, a software engineer from Orlando, FL. I'm building software solutions with civil engineers at ARA. It's nice to meet you."
         />
       </Head>
       <Container className="mt-9">
@@ -259,12 +257,21 @@ export default function Home({ articles }) {
           <h1 className="text-4xl font-bold tracking-wide text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Software engineer, amateur chef, coffee enthusiast.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m <strong>Jack Oporto</strong>, a software engineer based in
-            Orlando, FL. I’m a recent grad, focused on learning and building new
-            things. I love working with
-            <b> Typescript</b>, <b>React + Next.js</b> and <b>Tailwind CSS.</b>
-          </p>
+          <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <p>
+              I’m <strong>Jack Oporto</strong>, a software engineer from
+              Orlando, FL.
+            </p>
+            <p>
+              Building software solutions with civil engineers at Applied
+              Research Associates.
+            </p>
+            <p>
+              Love working with
+              <b> Typescript</b>, <b>React + Next.js</b>, <b>tRPC</b> and{' '}
+              <b>Tailwind.</b>
+            </p>
+          </div>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://github.com/OpoJack"

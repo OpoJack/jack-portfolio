@@ -20,7 +20,7 @@ import {
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
-      <ul role="list" className="space-y-16">
+      <ul role="list" className="space-y-5">
         {children}
       </ul>
     </Section>
@@ -77,7 +77,7 @@ export default function Uses() {
           </ToolsSection> */}
           <ToolsSection title="Workstation">
             <Tool title="Windows PC, Linux environment (2022)">
-              I refreshed my PC build this year, save for the GPU. I stay with
+              I refreshed my PC build last year, save for the GPU. I stay with
               Windows for gaming but I love the Linux dev experience so I use
               Windows Subsystem for Linux (
               <Link
@@ -159,14 +159,13 @@ export default function Uses() {
               roast.
             </Tool>
             <Tool title="Third Wave Water">
-              I never thought I'd go this far in search of perfection. I buy
-              plain distilled water and add a small package of Third Wave
+              I buy plain distilled water and add a small package of Third Wave
               Water's "Classic" blend to it. It's a blend of minerals that
               creates "soft" water, ideal for brewing and coffee makers
-              (protects coffee makers from Limescale). Much of the water we
-              consume is "hard" or just harder than this. "Soft" water lends
-              itself to a clear and balanced cup of coffee. It has ruined my
-              life. It's wonderful.
+              (protects coffee makers from calcium buildup). Much of the water
+              we consume is "hard" or just harder than this. "Soft" water lends
+              itself to a clear and balanced cup of coffee. It's hard to brew
+              without it.
               <br />
               <a
                 className="text-blue-500 hover:underline hover:underline-offset-2"

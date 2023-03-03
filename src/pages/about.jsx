@@ -62,7 +62,7 @@ export default function About() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               I’m Jack Oporto, <br />{' '}
               <span className="text-4xl">
-                a software engineer based in Orlando, FL.
+                a software engineer from Orlando, FL.
               </span>
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
@@ -85,10 +85,10 @@ export default function About() {
               </p>
               <p>
                 Since then, I've spent most of my time creating new projects,
-                learning fundamental concepts and working on my portfolio. I'm
-                currently looking for a full-time position as a software
-                engineer. I hope to work with a team that is passionate about
-                what they do and is always looking to improve.
+                learning best practices and working on my portfolio. I'm
+                currently working at{' '}
+                <strong>Applied Research Associates</strong> as a software
+                engineer and loving every minute of it.
               </p>
             </div>
           </div>
