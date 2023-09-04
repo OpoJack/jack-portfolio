@@ -13,7 +13,7 @@ const projects = [
   {
     name: 'Popup Club',
     description:
-      '[Under construction] Discover local food popups. A platform for popup organizers to share their events. Built with React, Next.js, Tailwind and Planetscale.',
+      '[Under construction] Discover local food popups. A platform for popup organizers to share their events. Built with React using Next.js, Tailwind and Planetscale.',
     link: {
       href: 'https://popup-club.vercel.app/',
       label: 'Demo',
@@ -21,19 +21,9 @@ const projects = [
     logo: logoOpenShuttle,
   },
   {
-    name: 'Warden Knives',
-    description:
-      'My first large e-commerce project. A Japanese knife shop. Built with Create-react-app, SASS and Redux',
-    link: {
-      href: 'https://wardenknives-db.web.app/',
-      label: 'Demo',
-    },
-    logo: logoWarden,
-  },
-  {
     name: 'Spotify track tracker',
     description:
-      'Simple Python script to gather data about the top Spotify tracks and send them to a database.',
+      'Simple Python script to gather data about the top Spotify tracks and store them in a database.',
     link: {
       href: 'https://github.com/OpoJack/Spotify-track-tracker',
       label: 'github.com',
@@ -43,7 +33,7 @@ const projects = [
   {
     name: 'Deli Desires',
     description:
-      'A simple static website for a local restaurant. Built with Create-react-app and Tailwind.',
+      'A simple static website for a local restaurant. Basic create-react-app with Tailwind.',
     link: {
       href: 'https://opojack.github.io/deli-desires/',
       label: 'Demo',
@@ -70,13 +60,10 @@ export default function Projects() {
         <title>Projects - Jack Oporto</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I’ve been working on recently"
         />
       </Head>
-      <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and consider contributing."
-      >
+      <SimpleLayout title="Things I’ve been working on recently" intro="">
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"

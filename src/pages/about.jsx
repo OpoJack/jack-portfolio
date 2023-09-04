@@ -43,7 +43,7 @@ export default function About() {
         <title>About - Jack Oporto</title>
         <meta
           name="description"
-          content="I’m Jack Oporto, a software engineer living in Orlando FL. I’m passionate about building great software and helping others do the same."
+          content="I’m Jack Oporto, a software dev living in Orlando FL. I’m passionate about building great software and helping others do the same."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,9 +61,7 @@ export default function About() {
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               I’m Jack Oporto, <br />{' '}
-              <span className="text-4xl">
-                a software engineer from Orlando, FL.
-              </span>
+              <span className="text-4xl">a software dev from Orlando, FL.</span>
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -85,10 +83,12 @@ export default function About() {
               </p>
               <p>
                 Since then, I've spent most of my time creating new projects,
-                learning best practices and working on my portfolio. I'm
-                currently working at{' '}
+                learning best practices and working on my portfolio.
+              </p>
+              <p>
+                I'm currently working at{' '}
                 <strong>Applied Research Associates</strong> as a software
-                engineer and loving every minute of it.
+                engineer + scrum master.
               </p>
             </div>
           </div>

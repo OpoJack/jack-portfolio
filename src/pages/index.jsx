@@ -18,7 +18,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import image6 from '@/images/photos/image-6.jpg'
 import logoGetaboard from '@/images/logos/getaboard.svg'
-import logoARA from '@/images/logos/ara.svg'
+import logoARA from '@/images/logos/ara.png'
 import logoToriTori from '@/images/logos/toritori.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -246,7 +246,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>Jack oporto - Software engineer, chef, coffee enthusiast.</title>
+        <title>Jack oporto - Software dev, chef, coffee enthusiast.</title>
         <meta
           name="description"
           content="I’m Jack Oporto, a software engineer from Orlando, FL. I'm building software solutions with civil engineers at ARA. It's nice to meet you."
@@ -255,22 +255,20 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-wide text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software engineer, amateur chef, coffee enthusiast.
+            Software dev, amateur chef, coffee enthusiast.
           </h1>
           <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’m <strong>Jack Oporto</strong>, a software engineer from
-              Orlando, FL.
+              I’m <strong>Jack Oporto</strong>, a software dev from Orlando, FL.
             </p>
             <p>
               Building software solutions with civil engineers at Applied
               Research Associates.
             </p>
-            <p>
-              Love working with
-              <b> Typescript</b>, <b>React + Next.js</b>, <b>tRPC</b> and{' '}
-              <b>Tailwind.</b>
-            </p>
+            {/* <p>
+              Some of my favorite technologies include <b> Typescript</b>,{' '}
+              <b>React + Next.js</b>, <b>tRPC</b> and <b>Tailwind.</b>
+            </p> */}
           </div>
           <div className="mt-6 flex gap-6">
             <SocialLink
