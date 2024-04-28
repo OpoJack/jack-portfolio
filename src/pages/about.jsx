@@ -60,35 +60,29 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Jack Oporto, <br />{' '}
-              <span className="text-4xl">a software dev from Orlando, FL.</span>
+              I’m Jack Oporto{' '}
+              <p className="text-4xl">a software dev from Orlando, FL.</p>
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I've loved building and fixing things for as long as I can
-                remember. I developed an interest in programming at an early age
-                but didn't think I was good enough to make it my profession.
-                I've been a cook for many years now, and I've found satisfaction
-                and happiness in the growing process. "You don't have to be
-                great to start, but you have to start to be great."
+                I've always had a passion for building and fixing things. My
+                interest in programming began early, but it took some time
+                before I saw it as a potential career path. For many years, I
+                worked as a cook, where I found joy and fulfillment in mastering
+                my craft. A guiding principle I've embraced is that "You don't
+                have to be great to start, but you have to start to be great."
               </p>
               <p>
-                Working for a highly regarded restaurant group instills a sense
-                of responsibility, to yourself and your guests. You hold
-                yourself to a higher standard and can't get too comfortable. No
-                matter the craft, there's something alluring about the push to
-                get better and better. Always be better than you were. In 2020,
-                I resolved to pursue a Bachelor's degree in software
-                engineering, which I completed in 2022.
+                Working within a prestigious restaurant group taught me the
+                importance of holding oneself to high standards and never
+                settling for complacency. Whether in the kitchen or coding, the
+                drive to continuously improve has always captivated me.
               </p>
               <p>
-                Since then, I've spent most of my time creating new projects,
-                learning best practices and working on my portfolio.
-              </p>
-              <p>
-                I'm currently working at{' '}
-                <strong>Applied Research Associates</strong> as a software
-                engineer + scrum master.
+                Currently working at{' '}
+                <strong>Applied Research Associates</strong> as an individual
+                contributor across several projects including web and desktop
+                applications.
               </p>
             </div>
           </div>

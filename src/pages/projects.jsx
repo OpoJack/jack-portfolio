@@ -60,12 +60,11 @@ export default function Projects() {
         <title>Projects - Jack Oporto</title>
         <meta
           name="description"
-          content="Things I’ve been working on recently"
+          content="Projects I’ve worked on"
         />
       </Head>
-      <SimpleLayout title="Things I’ve been working on recently" intro="">
+      <SimpleLayout title="Projects I’ve worked on" intro="">
         <ul
-          role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (

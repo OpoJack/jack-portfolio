@@ -136,10 +136,10 @@ function Newsletter() {
 }
 
 function Resume() {
-  let resume = [
+  const resume = [
     {
       company: 'Applied Research Associates',
-      title: 'Junior Software Engineer',
+      title: 'Staff Software Engineer 1',
       logo: logoARA,
       start: '2022',
       end: {
@@ -216,7 +216,7 @@ function Resume() {
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
   return (
     <div className="sm-ml-2 mt-16">
@@ -262,8 +262,8 @@ export default function Home({ articles }) {
               I’m <strong>Jack Oporto</strong>, a software dev from Orlando, FL.
             </p>
             <p>
-              Building software solutions with civil engineers at Applied
-              Research Associates.
+              Building enterprise software solutions with civil engineers at
+              Applied Research Associates.
             </p>
             {/* <p>
               Some of my favorite technologies include <b> Typescript</b>,{' '}
